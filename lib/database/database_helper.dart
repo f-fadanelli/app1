@@ -3,12 +3,13 @@ import 'package:sqflite/sqflite.dart';
 import '/database/sqls/pessoa_sql.dart';
 
 class DatabaseHelper {
+  static final String _nomeCaminhoBanco = '/storage/emulated/0/Download/';
   static final String _nomeBancoDeDados = "meubanco.db";
   static final int _versaoBancoDeDados = 2;
   static late Database _bancoDeDados;
 
   inicializar() async {
-    String caminhoBanco = join(await getDatabasesPath(), _nomeBancoDeDados);
+    String caminhoBanco = join(_nomeCaminhoBanco, _nomeBancoDeDados);
     _bancoDeDados = await openDatabase(
       caminhoBanco,
       version: _versaoBancoDeDados,
