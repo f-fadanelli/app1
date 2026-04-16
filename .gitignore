@@ -1,0 +1,54 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub/
+build/
+
+# Flutter generated files
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Coverage
+coverage/
+
+# Android
+android/.gradle/
+android/app/build/
+android/local.properties
+*.keystore
+*.jks
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# macOS
+macos/Flutter/Flutter.framework
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Web
+build/web/
+
+# Firebase / env
+*.env
+google-services.json
+GoogleService-Info.plist
+
+# Secrets
+key.properties
